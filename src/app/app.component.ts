@@ -1,10 +1,20 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases';
+  title = 'DBZ Main page';
+  counter: number = 10;
+
+  increaseby(value: number):void {
+    this.counter += value;  
+  };
+
+  reinicia() {
+    this.counter = 10;
+  }
+
 }
